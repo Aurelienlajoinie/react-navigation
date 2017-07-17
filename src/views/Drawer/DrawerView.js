@@ -137,6 +137,7 @@ export default class DrawerView<T: *> extends PureComponent<void, Props, void> {
         ref={(c: *) => {
           this._drawer = c;
         }}
+        drawerLockMode="locked-closed" // disable swipe to open
         drawerWidth={this.props.drawerWidth}
         onDrawerOpen={this._handleDrawerOpen}
         onDrawerClose={this._handleDrawerClose}
